@@ -1,0 +1,37 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Model downloads / caches (Transformers / Torch)
+.cache/
+.huggingface/
+torch_cache/
+*.pt
+*.pth
+
+# Uploaded images
+static/uploads/
+*.jpg
+*.png
+*.jpeg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment variables
+.env

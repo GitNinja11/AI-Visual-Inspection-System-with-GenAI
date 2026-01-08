@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Visual Inspection System</title>
+</head>
+<body>
+    <h2>Upload Image for Inspection</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Inspect</button>
+    </form>
+
+    {% if result %}
+        <h3>Result: {{ result }}</h3>
+        <h4>Generated Report:</h4>
+        <p>{{ report }}</p>
+        <img src="{{ image }}" width="300">
+    {% endif %}
+</body>
+</html>
